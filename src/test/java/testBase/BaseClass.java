@@ -34,13 +34,14 @@ public class BaseClass {
         //loading config.properties file
         //you can use FileReader class as well instead of Fileinputstram
         FileInputStream file=new FileInputStream("src/test/resources/config.properties");
-        p=new Properties();
-        p.load(file);
-        logger = LogManager.getLogger(this.getClass());
+        p=new Properties();//creating object of properties
+        p.load(file);//loading file into properties object
+        logger = LogManager.getLogger(this.getClass());//for log4j2 logging using log4j2.xml file
         switch (br.toLowerCase()){
-            case "chrome" : WebDriverManager.chromedriver().setup(); driver=new ChromeDriver(); break;
-            case "edge": WebDriverManager.edgedriver().setup(); driver = new EdgeDriver(); break;
-            case "firefox": WebDriverManager.firefoxdriver().setup(); driver= new FirefoxDriver(); break;
+//            case "chrome" : WebDriverManager.chromedriver().setup(); driver=new ChromeDriver(); break;
+            case "chrome":driver= new ChromeDriver();break;
+            case "edge": driver = new EdgeDriver(); break;
+            case "firefox": driver= new FirefoxDriver(); break;
             default:
                 System.out.println("Invalid browser name....");
                 return;
@@ -55,29 +56,30 @@ public class BaseClass {
     public void tearDown() {
         driver.quit();
     }
-
+    //to generate random string for email
     public String randomString() {
         String generatestring = RandomStringUtils.randomAlphabetic(6);
         return generatestring;
     }
-
+    // to generate random number for Telephone
     public String randomNumber() {
         String generateNumber = RandomStringUtils.randomNumeric(10);
         return generateNumber;
     }
-
+    //to generate random string for PASSWORD
     public String randomAlphaNumber() {
         String generateString = RandomStringUtils.randomAlphabetic(5);
         String generateNumber = RandomStringUtils.randomNumeric(4);
         return (generateString + "@" + generateNumber);
     }
+    //to capture screenshot when test case fails
     public String captureScreen(String tname) throws IOException{
-        String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-        TakesScreenshot takesScreenshot=(TakesScreenshot) driver;
-        File sourceFile=takesScreenshot.getScreenshotAs(OutputType.FILE);
-        String targetFilePath=System.getProperty("user.dir")+"screenshots"+tname+"_"+timeStamp;
+        String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());//timestamp
+        TakesScreenshot takesScreenshot=(TakesScreenshot) driver;// type casting
+        File sourceFile=takesScreenshot.getScreenshotAs(OutputType.FILE);//file format
+        String targetFilePath=System.getProperty("user.dir")+".\\screenshots\\"+tname+"_"+timeStamp+".png";
         File targetFile=new File(targetFilePath);
-        sourceFile.renameTo(targetFile);
+        sourceFile.renameTo(targetFile);//rename the file
         return targetFilePath;
     }
 }

@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
+<!-- log4j2.xml-->
 <configuration status="WARN">
+<!--    properties : helps in specifying the path of logs-->
     <Properties>
         <Property name="basePath">./logs</Property>
     </Properties>
+<!--    Appenders : helps in specifying the type of logs-->
     <Appenders>
+<!--        console is used to print logs in console-->
         <console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </console>
+<!--        RollingFile is used to print logs in file-->
         <RollingFile name="File" fileName="${basePath}/automation.log" filePattern="${basePath}/automation-%d{yyyy-mm-dd}.log">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
               <SizeBasedTriggeringPolicy size= "1000" />
         </RollingFile>
     </Appenders>
+<!--    Loggers : helps in specifying the level of logs-->
     <Loggers>
+<!--        Root is used to specify the level of logs-->
         <Root level="Debug"><!-- Here you can use multiple log levels All < Trace < Debug < Info < Warn < Error< Fatal <Off -->
             <!--<AppenderRef ref="Console"/>-->
             <AppenderRef ref="File"/>
