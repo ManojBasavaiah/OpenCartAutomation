@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data TC Suite">
+    <groups>
+        <run>
+            <include name="Sanity"/>
+            <include name="datadriven"/>
+            <exclude name="Regression"/>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+    <test thread-count="5" verbose="2" preserve-order="true" name="Test">
+    <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testCases.TC003_LoginDDT">
+                <methods>
+                    <include name="verify_loginDDT"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

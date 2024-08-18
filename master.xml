@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" thread-count="5" parallel="tests">
+<suite name="Master Suite" thread-count="5" parallel="tests">
+
+    <groups>
+    <run>
+        <include name="Master"/>
+    </run>
+    </groups>
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
     <test verbose="2" preserve-order="true" name="chrometest">
         <parameter name="os" value="Windows"/>
         <parameter name="browser" value="chrome"/>
@@ -12,16 +21,28 @@
             </class>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="edgetest">
-    <parameter name="os" value="Windows"/>
-    <parameter name="browser" value="edge"/>
-    <classes>
-        <class name="testCases.TC001_AccountRegistrationTest">
-            <methods>
-                <include name="verify_account_registration"/>
-            </methods>
-        </class>
-    </classes>
-</test>
+<!--    <test verbose="2" preserve-order="true" name="edgetest">-->
+<!--    <parameter name="os" value="Windows"/>-->
+<!--    <parameter name="browser" value="edge"/>-->
+<!--    <classes>-->
+<!--        <class name="testCases.TC002_LoginTest">-->
+<!--            <methods>-->
+<!--                <include name="loginPage"/>-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--    </classes>-->
+<!--</test>-->
+<!--    <test verbose="2" preserve-order="true" name="edgetest">-->
+<!--    <parameter name="os" value="Windows"/>-->
+<!--    <parameter name="browser" value="edge"/>-->
+<!--    <classes>-->
+<!--        <class name="testCases.TC003_LoginDDT">-->
+<!--            &lt;!&ndash;            <methods>&ndash;&gt;-->
+<!--            &lt;!&ndash;                <include name="loginPage"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;                <include name="MyAccountPage"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </methods>&ndash;&gt;-->
+<!--        </class>-->
+<!--    </classes>-->
+<!--    </test>-->
 
 </suite>

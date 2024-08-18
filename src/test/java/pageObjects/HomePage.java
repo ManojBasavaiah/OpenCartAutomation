@@ -9,6 +9,8 @@ public class HomePage extends BasePage {
     WebElement lnkMyaccount;
     @FindBy(linkText = "Register")
     WebElement lnkRegister;
+    @FindBy(linkText = "Login")
+    WebElement lnkLogin;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -20,6 +22,10 @@ public class HomePage extends BasePage {
 
     public void clickRegister() {
         lnkRegister.click();
+    }
+
+    public void clickLogin() {
+        lnkLogin.click();
     }
 }
 
