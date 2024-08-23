@@ -1,9 +1,0 @@
-18:39:49.440 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-18:39:49.466 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-18:39:49.503 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-18:39:49.503 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-18:39:49.503 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-18:39:49.761 [main] INFO  testCases.TC003_LoginDDT - ***** starting TC002_LoginTest ***** 
-18:39:49.934 [main] INFO  testCases.TC003_LoginDDT - Providing login details......
-18:39:50.499 [main] INFO  testCases.TC003_LoginDDT - Clicked on MyAccount link.......
-18:39:51.317 [main] INFO  testCases.TC003_LoginDDT - Clicked on Login link......

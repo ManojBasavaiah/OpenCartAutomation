@@ -5,7 +5,8 @@
     <!--    Grouping is used to group tests in testng.xml file based on groups -->
     <groups>
         <run>
-            <include name="Master, datadriven"/>
+            <include name="Master"/>
+            <include name="datadriven"/>
         </run>
     </groups>
     <!-- listeners are used to generate extent report -->
@@ -14,27 +15,27 @@
     </listeners>
     <!--    verbose is used to print logs in console as well as in extent report -->
     <!--    preserve-order is used to preserve the order of tests-->
-    <test preserve-order="true" name="chrometest">
+    <test verbose="2" preserve-order="true" parallel="true" name="chrometest">
         <!--        parameters are used to pass data from testng.xml-->
         <parameter name="os" value="Windows"/>
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="testCases.TC001_AccountRegistrationTest"/>
-            <class name="testCases.TC002_LoginTest"/>
-            <class name="testCases.TC003_LoginDDT">
+            <class name="testCases.TC001AccountRegistrationTest"/>
+            <class name="testCases.TC002LoginTest"/>
+            <class name="testCases.TC003LoginDDT">
                 <!--                <methods>-->
                 <!--                    <include name="verify_account_registration"/>-->
                 <!--                </methods>-->
             </class>
         </classes>
     </test>
-<!--    <test verbose="2" preserve-order="true" name="edgetest">-->
+<!--    <test preserve-order="true" verbose="2" parallel="true" name="edgetest">-->
 <!--        <parameter name="os" value="Windows"/>-->
 <!--        <parameter name="browser" value="edge"/>-->
 <!--        <classes>-->
-<!--            <class name="testCases.TC001_AccountRegistrationTest"/>-->
-<!--            <class name="testCases.TC002_LoginTest"/>-->
-<!--            <class name="testCases.TC003_LoginDDT">-->
+<!--            <class name="testCases.TC001AccountRegistrationTest"/>-->
+<!--            <class name="testCases.TC002LoginTest"/>-->
+<!--            <class name="testCases.TC003LoginDDT">-->
 <!--                &lt;!&ndash;                <methods>&ndash;&gt;-->
 <!--                &lt;!&ndash;                    <include name="loginPage"/>&ndash;&gt;-->
 <!--                &lt;!&ndash;                </methods>&ndash;&gt;-->
@@ -45,9 +46,9 @@
 <!--        <parameter name="os" value="Windows"/>-->
 <!--        <parameter name="browser" value="firefox"/>-->
 <!--        <classes>-->
-<!--            <class name="testCases.TC001_AccountRegistrationTest"/>-->
-<!--            <class name="testCases.TC002_LoginTest"/>-->
-<!--            <class name="testCases.TC003_LoginDDT">-->
+<!--            <class name="testCases.TC001AccountRegistrationTest"/>-->
+<!--            <class name="testCases.TC002LoginTest"/>-->
+<!--            <class name="testCases.TC003LoginDDT">-->
 <!--                &lt;!&ndash;            <methods>&ndash;&gt;-->
 <!--                &lt;!&ndash;                <include name="loginPage"/>&ndash;&gt;-->
 <!--                &lt;!&ndash;                <include name="MyAccountPage"/>&ndash;&gt;-->

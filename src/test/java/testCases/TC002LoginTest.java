@@ -7,10 +7,10 @@ import pageObjects.MyAccountPage;
 import pageObjects.loginPage;
 import testBase.BaseClass;
 
-public class TC002_LoginTest extends BaseClass {
-    @Test(groups = {"Sanity", "Master"})
+public class TC002LoginTest extends BaseClass {
+    @Test(groups = {"Sanity", "Master"}, invocationCount = 1)
     public void verify_login(){
-        logger.info("***** starting TC002_LoginTest ***** ");
+        logger.info("***** starting TC002LoginTest ***** ");
         try {
             //Homepage
             HomePage hp = new HomePage(driver);
@@ -37,6 +37,6 @@ public class TC002_LoginTest extends BaseClass {
             Assert.fail();
         }
         //or Assert.assertTrue(targetPage);
-        logger.info("***** Finished TC002_LoginTest *****");
+        logger.info("***** Finished TC002LoginTest *****");
     }
 }

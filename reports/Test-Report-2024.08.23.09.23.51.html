@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Opencart UI automation testing</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 18, 2024 05:08:09 pm</span></a>
+<a href="#"><span class="badge badge-primary">Aug 23, 2024 09:23:51 am</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">Regression</a><a class="dropdown-item" href="#">Sanity</a><a class="dropdown-item" href="#">Master</a>
+<a class="dropdown-item" href="#">Regression</a><a class="dropdown-item" href="#">Master</a><a class="dropdown-item" href="#">Sanity</a><a class="dropdown-item" href="#">datadriven</a>
 </ul>
 </li>
 </ul>
@@ -87,12 +87,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="fail" test-id="1"
           author=""
-          tag="Regression Master"
+          tag="datadriven"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC001_AccountRegistrationTest</p>
+            <p class="name">testCases.TC003LoginDDT</p>
             <p class="text-sm">
-              <span>5:09:17 pm</span> / <span>00:00:00:094</span>
+              <span>9:25:25 am</span> / <span>00:00:00:173</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -100,11 +100,60 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testCases.TC001_AccountRegistrationTest</h5>
-<span class='badge badge-success'>08.18.2024 5:09:17 pm</span>
-<span class='badge badge-danger'>08.18.2024 5:09:17 pm</span>
-<span class='badge badge-default'>00:00:00:094</span>
+<h5 class="test-status text-fail">testCases.TC003LoginDDT</h5>
+<span class='badge badge-success'>08.23.2024 9:25:25 am</span>
+<span class='badge badge-danger'>08.23.2024 9:25:25 am</span>
+<span class='badge badge-default'>00:00:00:173</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">datadriven</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:25:25 am</td>
+        <td>
+          verify_loginDDTgot failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:25:25 am</td>
+        <td>
+          org.apache.poi.EmptyFileException: The supplied file was empty (zero bytes long)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag="Regression Master"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC001AccountRegistrationTest</p>
+            <p class="text-sm">
+              <span>9:25:32 am</span> / <span>00:00:00:002</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC001AccountRegistrationTest</h5>
+<span class='badge badge-success'>08.23.2024 9:25:32 am</span>
+<span class='badge badge-danger'>08.23.2024 9:25:32 am</span>
+<span class='badge badge-default'>00:00:00:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -118,80 +167,14 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:17 pm</td>
+        <td>9:25:32 am</td>
         <td>
           verify_account_registrationgot failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:09:17 pm</td>
-        <td>
-          null
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="2"
-          author=""
-          tag="Regression Master"
-          device="">
-          <div class="test-detail">
-            <p class="name">testCases.TC001_AccountRegistrationTest</p>
-            <p class="text-sm">
-              <span>5:09:27 pm</span> / <span>00:00:00:546</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testCases.TC001_AccountRegistrationTest</h5>
-<span class='badge badge-success'>08.18.2024 5:09:27 pm</span>
-<span class='badge badge-danger'>08.18.2024 5:09:28 pm</span>
-<span class='badge badge-default'>00:00:00:546</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Regression</span>
-<span class="badge badge-pill badge-default">Master</span></div>
-</div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='D:\desktop\Coding\OpenCart.\screenshots\verify_account_registration_20240818050917.png' src="D:\desktop\Coding\OpenCart.\screenshots\verify_account_registration_20240818050917.png">
-  
-    
-
-    </div></div>
-    <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='D:\desktop\Coding\OpenCart.\screenshots\verify_account_registration_20240818050927.png' src="D:\desktop\Coding\OpenCart.\screenshots\verify_account_registration_20240818050927.png">
-  
-    
-
-    </div></div>
-<div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:27 pm</td>
-        <td>
-          verify_account_registrationgot failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:09:27 pm</td>
+        <td>9:25:32 am</td>
         <td>
           null
         </td>
@@ -206,9 +189,9 @@
           tag="Sanity Master"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC002_LoginTest</p>
+            <p class="name">testCases.TC002LoginTest</p>
             <p class="text-sm">
-              <span>5:10:12 pm</span> / <span>00:00:00:295</span>
+              <span>9:25:42 am</span> / <span>00:00:00:002</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -216,10 +199,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testCases.TC002_LoginTest</h5>
-<span class='badge badge-success'>08.18.2024 5:10:12 pm</span>
-<span class='badge badge-danger'>08.18.2024 5:10:13 pm</span>
-<span class='badge badge-default'>00:00:00:295</span>
+<h5 class="test-status text-fail">testCases.TC002LoginTest</h5>
+<span class='badge badge-success'>08.23.2024 9:25:42 am</span>
+<span class='badge badge-danger'>08.23.2024 9:25:42 am</span>
+<span class='badge badge-default'>00:00:00:002</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -228,28 +211,20 @@
 <div class="m-t-15"><span class="badge badge-pill badge-default">Sanity</span>
 <span class="badge badge-pill badge-default">Master</span></div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='D:\desktop\Coding\OpenCart.\screenshots\verify_login_20240818051012.png' src="D:\desktop\Coding\OpenCart.\screenshots\verify_login_20240818051012.png">
-  
-    
-
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:12 pm</td>
+        <td>9:25:42 am</td>
         <td>
           verify_logingot failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:10:12 pm</td>
+        <td>9:25:42 am</td>
         <td>
           null
         </td>
@@ -264,9 +239,9 @@
           tag="Sanity Master"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC002_LoginTest</p>
+            <p class="name">testCases.TC002LoginTest</p>
             <p class="text-sm">
-              <span>5:10:19 pm</span> / <span>00:00:00:001</span>
+              <span>9:25:52 am</span> / <span>00:00:00:000</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -274,10 +249,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testCases.TC002_LoginTest</h5>
-<span class='badge badge-success'>08.18.2024 5:10:19 pm</span>
-<span class='badge badge-danger'>08.18.2024 5:10:19 pm</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<h5 class="test-status text-fail">testCases.TC002LoginTest</h5>
+<span class='badge badge-success'>08.23.2024 9:25:52 am</span>
+<span class='badge badge-danger'>08.23.2024 9:25:52 am</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -292,14 +267,14 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:19 pm</td>
+        <td>9:25:52 am</td>
         <td>
           verify_logingot failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:10:19 pm</td>
+        <td>9:25:52 am</td>
         <td>
           null
         </td>
@@ -311,12 +286,12 @@
         </li>
         <li class="test-item"  status="fail" test-id="5"
           author=""
-          tag="Sanity Master"
+          tag="Regression Master"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC002_LoginTest</p>
+            <p class="name">testCases.TC001AccountRegistrationTest</p>
             <p class="text-sm">
-              <span>5:10:19 pm</span> / <span>00:00:00:001</span>
+              <span>9:26:02 am</span> / <span>00:00:01:591</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -324,17 +299,106 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testCases.TC002_LoginTest</h5>
-<span class='badge badge-success'>08.18.2024 5:10:19 pm</span>
-<span class='badge badge-danger'>08.18.2024 5:10:19 pm</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<h5 class="test-status text-fail">testCases.TC001AccountRegistrationTest</h5>
+<span class='badge badge-success'>08.23.2024 9:26:02 am</span>
+<span class='badge badge-danger'>08.23.2024 9:26:03 am</span>
+<span class='badge badge-default'>00:00:01:591</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Sanity</span>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Regression</span>
 <span class="badge badge-pill badge-default">Master</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\desktop\Coding\OpenCart.\screenshots\verify_loginDDT_20240823092525.png' src="D:\desktop\Coding\OpenCart.\screenshots\verify_loginDDT_20240823092525.png">
+  
+    
+
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\desktop\Coding\OpenCart.\screenshots\verify_account_registration_20240823092532.png' src="D:\desktop\Coding\OpenCart.\screenshots\verify_account_registration_20240823092532.png">
+  
+    
+
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\desktop\Coding\OpenCart.\screenshots\verify_login_20240823092542.png' src="D:\desktop\Coding\OpenCart.\screenshots\verify_login_20240823092542.png">
+  
+    
+
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\desktop\Coding\OpenCart.\screenshots\verify_login_20240823092552.png' src="D:\desktop\Coding\OpenCart.\screenshots\verify_login_20240823092552.png">
+  
+    
+
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\desktop\Coding\OpenCart.\screenshots\verify_account_registration_20240823092602.png' src="D:\desktop\Coding\OpenCart.\screenshots\verify_account_registration_20240823092602.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:26:02 am</td>
+        <td>
+          verify_account_registrationgot failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:26:02 am</td>
+        <td>
+          null
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag="datadriven"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC003LoginDDT</p>
+            <p class="text-sm">
+              <span>9:26:04 am</span> / <span>00:00:00:001</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC003LoginDDT</h5>
+<span class='badge badge-success'>08.23.2024 9:26:04 am</span>
+<span class='badge badge-danger'>08.23.2024 9:26:04 am</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">datadriven</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -342,22 +406,70 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:19 pm</td>
+        <td>9:26:04 am</td>
         <td>
-          verify_logingot failed
+          verify_loginDDTgot failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:10:19 pm</td>
+        <td>9:26:04 am</td>
         <td>
-          Error communicating with the remote browser. It may have died.
+          null
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author=""
+          tag="datadriven"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC003LoginDDT</p>
+            <p class="text-sm">
+              <span>9:26:04 am</span> / <span>00:00:00:001</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC003LoginDDT</h5>
+<span class='badge badge-success'>08.23.2024 9:26:04 am</span>
+<span class='badge badge-danger'>08.23.2024 9:26:04 am</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">datadriven</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:26:04 am</td>
+        <td>
+          verify_loginDDTgot failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:26:04 am</td>
+        <td>
+          Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '4.23.1', revision: '656257d8e9'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [30a1f46f8d0711827fd50abf8a89a2f3, screenshot []]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49954}, msedge: {msedgedriverVersion: 127.0.2651.105 (e2354f41f84..., userDataDir: C:\Users\manoj\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49954/devtoo..., se:cdpVersion: 127.0.2651.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 30a1f46f8d0711827fd50abf8a89a2f3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.122, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\manoj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51402/devtoo..., se:cdpVersion: 127.0.6533.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
         </td>
       </tr>
   </tbody>
@@ -378,21 +490,61 @@ Session ID: 30a1f46f8d0711827fd50abf8a89a2f3
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>4</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">Regression</p>
-<p class="duration text-sm">4 tests</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>Regression</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>09:25:32 am</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>testCases.TC001AccountRegistrationTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>09:26:02 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>testCases.TC001AccountRegistrationTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">Master</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Master</h4>
 <span status="fail" class='badge log badge-danger'>4 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -406,16 +558,30 @@ Session ID: 30a1f46f8d0711827fd50abf8a89a2f3
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:09:17 pm</td>
+<td>09:25:32 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>testCases.TC001_AccountRegistrationTest</a>
+<a href="#" class="linked" test-id='2' id='2'>testCases.TC001AccountRegistrationTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:09:27 pm</td>
+<td>09:25:42 am</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>testCases.TC001_AccountRegistrationTest</a>
+<a href="#" class="linked" test-id='3' id='3'>testCases.TC002LoginTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>09:25:52 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>testCases.TC002LoginTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>09:26:02 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>testCases.TC001AccountRegistrationTest</a>
 </td>
 </tr>
 </tbody>
@@ -425,15 +591,15 @@ Session ID: 30a1f46f8d0711827fd50abf8a89a2f3
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>3</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">Sanity</p>
-<p class="duration text-sm">3 tests</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>Sanity</h4>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -446,23 +612,16 @@ Session ID: 30a1f46f8d0711827fd50abf8a89a2f3
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:10:12 pm</td>
+<td>09:25:42 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>testCases.TC002_LoginTest</a>
+<a href="#" class="linked" test-id='3' id='3'>testCases.TC002LoginTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:10:19 pm</td>
+<td>09:25:52 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>testCases.TC002_LoginTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:10:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>testCases.TC002_LoginTest</a>
+<a href="#" class="linked" test-id='4' id='4'>testCases.TC002LoginTest</a>
 </td>
 </tr>
 </tbody>
@@ -472,15 +631,15 @@ Session ID: 30a1f46f8d0711827fd50abf8a89a2f3
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>5</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">Master</p>
-<p class="duration text-sm">5 tests</p>
+<p class="name">datadriven</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>Master</h4>
-<span status="fail" class='badge log badge-danger'>5 failed</span>
+<h4>datadriven</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -493,37 +652,23 @@ Session ID: 30a1f46f8d0711827fd50abf8a89a2f3
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:09:17 pm</td>
+<td>09:25:25 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>testCases.TC001_AccountRegistrationTest</a>
+<a href="#" class="linked" test-id='1' id='1'>testCases.TC003LoginDDT</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:09:27 pm</td>
+<td>09:26:04 am</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>testCases.TC001_AccountRegistrationTest</a>
+<a href="#" class="linked" test-id='6' id='6'>testCases.TC003LoginDDT</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:10:12 pm</td>
+<td>09:26:04 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>testCases.TC002_LoginTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:10:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>testCases.TC002_LoginTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:10:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>testCases.TC002_LoginTest</a>
+<a href="#" class="linked" test-id='7' id='7'>testCases.TC003LoginDDT</a>
 </td>
 </tr>
 </tbody>
@@ -543,13 +688,13 @@ Session ID: 30a1f46f8d0711827fd50abf8a89a2f3
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 18, 2024 05:08:09 pm</h3>
+<h3>Aug 23, 2024 09:23:51 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 18, 2024 05:10:20 pm</h3>
+<h3>Aug 23, 2024 09:26:03 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -619,7 +764,7 @@ Session ID: 30a1f46f8d0711827fd50abf8a89a2f3
 </div></div>
 <script>
 var timeline = {
-"testCases.TC001_AccountRegistrationTest":0.094,"testCases.TC001_AccountRegistrationTest":0.546,"testCases.TC002_LoginTest":0.295,"testCases.TC002_LoginTest":0.001,"testCases.TC002_LoginTest":0.001
+"testCases.TC003LoginDDT":0.173,"testCases.TC001AccountRegistrationTest":0.002,"testCases.TC002LoginTest":0.002,"testCases.TC002LoginTest":0,"testCases.TC001AccountRegistrationTest":1.591,"testCases.TC003LoginDDT":0.001,"testCases.TC003LoginDDT":0.001
 };
 </script>
 <div class="row">
@@ -631,6 +776,14 @@ var timeline = {
 <tr>
 <td>Regression</td>
 <td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Master</td>
+<td>0</td>
 <td>4</td>
 <td>0</td>
 <td>0</td>
@@ -639,15 +792,15 @@ var timeline = {
 <tr>
 <td>Sanity</td>
 <td>0</td>
-<td>3</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0%</td>
 </tr>
 <tr>
-<td>Master</td>
+<td>datadriven</td>
 <td>0</td>
-<td>5</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0%</td>
@@ -716,11 +869,11 @@ var timeline = {
 </tr>
 <tr>
 <td>Groups</td>
-<td>[Master]</td>
+<td>[Master, datadriven]</td>
 </tr>
 <tr>
 <td>Groups</td>
-<td>[Master]</td>
+<td>[Master, datadriven]</td>
 </tr>
 </tbody>
 </table></div>
