@@ -15,10 +15,10 @@
     </listeners>
     <!--    verbose is used to print logs in console as well as in extent report -->
     <!--    preserve-order is used to preserve the order of tests-->
-    <test verbose="2" preserve-order="true" parallel="true" name="chrometest">
+    <test verbose="2" preserve-order="true" name="safaritest">
         <!--        parameters are used to pass data from testng.xml-->
-        <parameter name="os" value="Windows"/>
-        <parameter name="browser" value="chrome"/>
+        <parameter name="os" value="mac"/>
+        <parameter name="browser" value="safari"/>
         <classes>
             <class name="testCases.TC001AccountRegistrationTest"/>
             <class name="testCases.TC002LoginTest"/>
@@ -29,21 +29,22 @@
             </class>
         </classes>
     </test>
-<!--    <test preserve-order="true" verbose="2" parallel="true" name="edgetest">-->
+<!--    <test preserve-order="true" verbose="2" name="edge1test">-->
 <!--        <parameter name="os" value="Windows"/>-->
 <!--        <parameter name="browser" value="edge"/>-->
 <!--        <classes>-->
-<!--            <class name="testCases.TC001AccountRegistrationTest"/>-->
-<!--            <class name="testCases.TC002LoginTest"/>-->
-<!--            <class name="testCases.TC003LoginDDT">-->
+<!--            <class name="testCases.TC001AccountRegistrationTest">-->
+<!--&lt;!&ndash;            <class name="testCases.TC002LoginTest"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="testCases.TC003LoginDDT">&ndash;&gt;-->
 <!--                &lt;!&ndash;                <methods>&ndash;&gt;-->
 <!--                &lt;!&ndash;                    <include name="loginPage"/>&ndash;&gt;-->
 <!--                &lt;!&ndash;                </methods>&ndash;&gt;-->
 <!--            </class>-->
 <!--        </classes>-->
 <!--    </test>-->
+
 <!--    <test verbose="2" preserve-order="true" name="firefoxtest">-->
-<!--        <parameter name="os" value="Windows"/>-->
+<!--        <parameter name="os" value="linux"/>-->
 <!--        <parameter name="browser" value="firefox"/>-->
 <!--        <classes>-->
 <!--            <class name="testCases.TC001AccountRegistrationTest"/>-->

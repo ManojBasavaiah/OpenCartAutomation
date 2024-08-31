@@ -8,6 +8,7 @@ import pageObjects.loginPage;
 import testBase.BaseClass;
 
 public class TC002LoginTest extends BaseClass {
+    //threadPoolSize :
     @Test(groups = {"Sanity", "Master"}, invocationCount = 1)
     public void verify_login(){
         logger.info("***** starting TC002LoginTest ***** ");
@@ -32,7 +33,7 @@ public class TC002LoginTest extends BaseClass {
             boolean targetPage = myac.isMyAccountPageExists();
 
             //assertion
-            Assert.assertEquals(targetPage, true, "login failed");
+            Assert.assertTrue(targetPage, "login failed");
         }catch (Exception e){
             Assert.fail();
         }

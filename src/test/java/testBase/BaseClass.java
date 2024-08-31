@@ -47,17 +47,21 @@ public class BaseClass {
                 capabilities.setPlatform(Platform.WIN11);
             } else if (os.equalsIgnoreCase("mac")) {
                 capabilities.setPlatform(Platform.MAC);
+            } else if (os.equalsIgnoreCase("linux")) {
+                capabilities.setPlatform(Platform.LINUX);
             } else {
-                System.out.println("No matching OS");
+                System.out.println("No matching OS....");
                 return;
             }
+
+
             //browser
             switch (br.toLowerCase()) {
                 case "chrome":
                     capabilities.setBrowserName("chrome");
                     break;
                 case "edge":
-                    capabilities.setBrowserName("edge");
+                    capabilities.setBrowserName("MicrosoftEdge");
                     break;
                 case "firefox":
                     capabilities.setBrowserName("firefox");
@@ -68,6 +72,42 @@ public class BaseClass {
             }
 
             driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
+        }
+        if (p.getProperty("execution_env").equalsIgnoreCase("browserstack")) {
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            //os
+            if (os.equalsIgnoreCase("windows")) {
+                capabilities.setPlatform(Platform.WIN11);
+            } else if (os.equalsIgnoreCase("mac")) {
+                capabilities.setPlatform(Platform.MAC);
+            } else if (os.equalsIgnoreCase("linux")) {
+                capabilities.setPlatform(Platform.LINUX);
+            } else {
+                System.out.println("No matching OS....");
+                return;
+            }
+
+
+            //browser
+            switch (br.toLowerCase()) {
+                case "safari":
+                    capabilities.setBrowserName("safari");
+                    break;
+                case "chrome":
+                    capabilities.setBrowserName("chrome");
+                    break;
+                case "edge":
+                    capabilities.setBrowserName("MicrosoftEdge");
+                    break;
+                case "firefox":
+                    capabilities.setBrowserName("firefox");
+                    break;
+                default:
+                    System.out.println("Invalid browser name....");
+                    return;
+            }
+            driver = new RemoteWebDriver(new URL("https://" + p.getProperty("bro_username") + ":" +
+                    p.getProperty("bro_access_key") + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
         }
         if (p.getProperty("execution_env").equalsIgnoreCase("local")) {
             switch (br.toLowerCase()) {
@@ -126,4 +166,6 @@ public class BaseClass {
         sourceFile.renameTo(targetFile);//rename the file
         return targetFilePath;
     }
+
 }
+
