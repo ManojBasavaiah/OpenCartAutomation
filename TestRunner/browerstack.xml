@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--thread-count is used to run tests in parallel which helps in reducing time of execution-->
+<suite name="Master Suite" thread-count="5" parallel="classes">
+    <!--    Grouping is used to group tests in testng.xml file based on groups -->
+    <groups>
+        <run>
+            <include name="Master"/>
+            <include name="datadriven"/>
+        </run>
+    </groups>
+    <!-- listeners are used to generate extent report -->
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+    <!--    verbose is used to print logs in console as well as in extent report -->
+    <!--    preserve-order is used to preserve the order of tests-->
+<!--    <test verbose="2" preserve-order="true" name="safaritest">-->
+<!--        &lt;!&ndash;        parameters are used to pass data from testng.xml&ndash;&gt;-->
+<!--        <parameter name="os" value="mac"/>-->
+<!--        <parameter name="browser" value="safari"/>-->
+<!--        <classes>-->
+<!--            <class name="testCases.TC001AccountRegistrationTest"/>-->
+<!--            <class name="testCases.TC002LoginTest"/>-->
+<!--            <class name="testCases.TC003LoginDDT">-->
+<!--                &lt;!&ndash;                <methods>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <include name="verify_account_registration"/>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </methods>&ndash;&gt;-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test preserve-order="true" verbose="2" name="chrome">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testCases.TC001AccountRegistrationTest"/>
+            <class name="testCases.TC002LoginTest"/>
+            <class name="testCases.TC003LoginDDT">
+                <!--                <methods>-->
+                <!--                    <include name="loginPage"/>-->
+                <!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="firefoxtest">
+        <parameter name="os" value="mac"/>
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="testCases.TC001AccountRegistrationTest"/>
+            <class name="testCases.TC002LoginTest"/>
+            <class name="testCases.TC003LoginDDT">
+                <!--            <methods>-->
+                <!--                <include name="loginPage"/>-->
+                <!--                <include name="MyAccountPage"/>-->
+                <!--            </methods>-->
+            </class>
+        </classes>
+    </test>
+
+</suite>
